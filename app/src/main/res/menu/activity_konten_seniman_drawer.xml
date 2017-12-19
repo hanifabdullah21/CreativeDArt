@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	  xmlns:tools="http://schemas.android.com/tools"
+	  tools:showIn="navigation_view">
+
+	<group
+		android:checkableBehavior="single">
+		<item
+			android:id="@+id/menu_utama"
+			android:icon="@drawable/home"
+			android:title="Menu Utama"/>
+		<item
+			android:id="@+id/menu_profil"
+			android:icon="@drawable/profil"
+			android:title="Pengaturan Profil"/>
+		<item
+			android:id="@+id/menu_galeri"
+			android:icon="@drawable/profil"
+			android:title="Galeri"/>
+		<item
+			android:id="@+id/menu_keluar"
+			android:title="Keluar"/>
+	</group>
+
+</menu>

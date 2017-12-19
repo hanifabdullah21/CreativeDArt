@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_margin="10dp"
+	android:orientation="vertical"
+	tools:context="com.singpaulee.creativedart.AddItemActivity">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center">
+
+				<de.hdodenhof.circleimageview.CircleImageView
+					android:id="@+id/civ_galeri"
+					android:layout_width="150dp"
+					android:layout_height="150dp"
+					android:layout_gravity="center_horizontal"
+					android:scaleType="centerCrop"
+					android:src="@drawable/profil"
+					app:civ_border_color="#000"
+					app:civ_border_overlay="true"
+					app:civ_border_width="2dp"/>
+
+				<de.hdodenhof.circleimageview.CircleImageView
+					android:id="@+id/getPhoto"
+					android:layout_width="50dp"
+					android:layout_height="50dp"
+					android:layout_gravity="bottom"
+					android:src="@drawable/ic_menu_camera"/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Nama Seni"
+					android:textSize="20sp"/>
+
+				<EditText
+					android:id="@+id/edt_nama_seni"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:hint="Masukkan nama seni"
+					android:inputType="text"
+					android:paddingLeft="10dp"
+					android:textSize="20sp"/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Harga Seni"
+					android:textSize="20sp"/>
+
+				<EditText
+					android:id="@+id/edt_harga"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:hint="Masukkan Harga Seni"
+					android:inputType="number"
+					android:paddingLeft="10dp"/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Deskripsi Seni"
+					android:textSize="20sp"/>
+
+				<EditText
+					android:id="@+id/edt_deskripsi"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:hint="Masukkan Deskripsi Seni"
+					android:inputType="textLongMessage"
+					android:paddingLeft="10dp"/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Kategori"
+					android:textSize="20sp"/>
+
+				<EditText
+					android:id="@+id/tv_kategori"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:paddingLeft="10dp"
+					android:text="--- Kategori ---"
+					android:editable="false"
+					android:textSize="20sp"/>
+
+				<Spinner
+					android:id="@+id/spinner"
+					android:layout_width="match_parent"
+					android:layout_height="0dp"
+					android:layout_marginBottom="10dp"></Spinner>
+			</LinearLayout>
+
+			<Button
+				android:id="@+id/btn_upload"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="right"
+				android:text="UPLOAD"/>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

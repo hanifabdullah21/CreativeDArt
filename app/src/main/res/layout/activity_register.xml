@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/background"
+	android:orientation="vertical"
+	tools:context="com.singpaulee.creativedart.RegisterActivity">
+
+	<ImageView
+		android:id="@+id/logo_atas"
+		android:layout_width="250dp"
+		android:layout_height="100dp"
+		android:layout_gravity="center"
+		android:src="@drawable/logo_persegi_panjang2"/>
+
+	<ScrollView
+		android:id="@+id/sv_register"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginBottom="20dp">
+
+		<LinearLayout
+			style="@style/layout"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<EditText
+					android:id="@+id/edt_nama_depan"
+					style="@style/edittext_biasa"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:layout_weight="1"
+					android:hint="Nama Depan"/>
+
+				<EditText
+					android:id="@+id/edt_nama_belakang"
+					style="@style/edittext_biasa"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:layout_weight="1"
+					android:hint="Nama Belakang"/>
+			</LinearLayout>
+
+			<EditText
+				android:id="@+id/edt_username"
+				style="@style/edittext_biasa"
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:hint="Username"/>
+
+			<EditText
+				android:id="@+id/edt_email"
+				style="@style/edittext_biasa"
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:hint="Email"/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="8dp"
+				android:background="@color/background_button"
+				android:orientation="vertical"
+				android:paddingLeft="10dp">
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_margin="5dp"
+					android:text="Jenis Kelamin"
+					android:textColor="#000"
+					android:textSize="18sp"/>
+
+				<RadioGroup
+					android:id="@+id/radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<RadioButton
+						android:id="@+id/rb_laki"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:text="Laki-Laki"/>
+
+					<RadioButton
+						android:id="@+id/rb_perempuan"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:text="Perempuan"/>
+				</RadioGroup>
+			</LinearLayout>
+
+			<EditText
+				android:id="@+id/edt_password"
+				style="@style/edittext_password"
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:hint="Password"/>
+
+			<EditText
+				android:id="@+id/edt_verifikasi_password"
+				style="@style/edittext_password"
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:hint="Verifikasi Password"/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="8dp"
+				android:background="@color/background_button"
+				android:orientation="vertical"
+				android:paddingLeft="10dp">
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_margin="5dp"
+					android:text="Daftar Sebagai :"
+					android:textColor="#000"
+					android:textSize="18sp"/>
+
+				<RadioGroup
+					android:id="@+id/radio_status"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<RadioButton
+						android:id="@+id/rb_user"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:text="User"/>
+
+					<RadioButton
+						android:id="@+id/rb_seniman"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:text="Seniman"/>
+				</RadioGroup>
+			</LinearLayout>
+
+			<Button
+				android:id="@+id/btn_register_daftar"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:text="DAFTAR"/>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

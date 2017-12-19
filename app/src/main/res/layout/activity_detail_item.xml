@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/background"
+	tools:context="com.singpaulee.creativedart.DetailItemActivity">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_alignParentTop="true">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/nama_seni"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="3dp"
+				android:gravity="center"
+				android:text="Nama Seni"
+				android:textColor="#fff"
+				android:textSize="24sp"/>
+
+			<ImageView
+				android:id="@+id/detail_gambar_seni"
+				android:layout_width="match_parent"
+				android:layout_height="200dp"
+				android:layout_marginLeft="25dp"
+				android:layout_marginRight="25dp"
+				android:layout_marginTop="20dp"
+				android:scaleType="fitXY"
+				android:src="@drawable/download"/>
+
+			<android.support.v7.widget.CardView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="20dp"
+				android:layout_marginRight="20dp"
+				android:layout_marginTop="15dp"
+				app:cardCornerRadius="10dp"
+				app:cardElevation="5dp">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="60dp"
+					android:layout_margin="5dp">
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_weight="2"
+						android:gravity="center"
+						android:text="Nama Seniman"
+						android:textColor="#000"
+						android:textSize="20sp"/>
+
+					<TextView
+						android:id="@+id/detail_nama_seniman"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:gravity="center_vertical"
+						android:padding="10dp"
+						android:text="Nama Seniman"
+						android:textColor="#000"
+						android:textSize="18sp"/>
+				</LinearLayout>
+			</android.support.v7.widget.CardView>
+
+			<android.support.v7.widget.CardView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="20dp"
+				android:layout_marginRight="20dp"
+				android:layout_marginTop="15dp"
+				app:cardCornerRadius="10dp"
+				app:cardElevation="5dp">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_margin="5dp">
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_weight="2"
+						android:gravity="center"
+						android:text="Deskripsi"
+						android:textColor="#000"
+						android:textSize="20sp"/>
+
+					<TextView
+						android:id="@+id/detail_deskripsi"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:gravity="center_vertical"
+						android:padding="10dp"
+						android:text="Ini adalah sebuah mahakarya yang terbuat dari sdalkndla aslnalsndl"
+						android:textColor="#000"
+						android:textSize="16sp"/>
+				</LinearLayout>
+			</android.support.v7.widget.CardView>
+		</LinearLayout>
+	</ScrollView>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true">
+
+		<TextView
+			android:id="@+id/detail_harga"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:background="@color/background_dark"
+			android:gravity="center"
+			android:padding="5dp"
+			android:text="Rp. 1.500.000"
+			android:textColor="#fff"
+			android:textSize="20sp"/>
+
+		<TextView
+			android:id="@+id/tv_beli"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:background="@color/background_button"
+			android:gravity="center"
+			android:padding="5dp"
+			android:text="BELI"
+			android:textColor="#000"
+			android:textSize="20sp"
+			android:textStyle="bold"/>
+	</LinearLayout>
+
+</RelativeLayout>

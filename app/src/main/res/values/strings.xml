@@ -1,0 +1,19 @@
+<resources>
+	<string name="app_name">CreativeD\'Art</string>
+	<string name="open">CreativeD\'Art</string>
+	<string name="close">CreativeD\'Art</string>
+
+	<!-- TODO: Remove or change this placeholder text -->
+	<string name="hello_blank_fragment">Hello blank fragment</string>
+	<string name="title_activity_navigasi_drawer">NavigasiDrawer</string>
+
+	<string name="navigation_drawer_open">Open navigation drawer</string>
+	<string name="navigation_drawer_close">Close navigation drawer</string>
+
+	<string name="action_settings">Settings</string>
+	<string name="title_activity_konten">KontenActivity</string>
+	<string name="title_activity_detail">DetailActivity</string>
+	<string name="title_activity_profil">ProfilActivity</string>
+	<string name="title_activity_galeri">GaleriActivity</string>
+	<string name="title_activity_konten_seniman">KontenSenimanActivity</string>
+</resources>
